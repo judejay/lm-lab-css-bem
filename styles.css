@@ -1,5 +1,11 @@
 /* You can delete / re-write this img class  */
 
+:root {
+  --dark-side-primary: rgb(207, 26, 33);
+  --light-side-primary: rgb(1, 159, 224);
+  --star-wars-title: rgb(250, 220, 8);
+}
+
 body {
   background-image: url("./images/star-field.jpg");
 }
@@ -17,7 +23,7 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   text-align: center;
-  color: yellow;
+  color: var(--star-wars-title);
   margin: 1rem;
 }
 
@@ -37,12 +43,12 @@ body {
 }
 .dark-card {
   color: white;
-  box-shadow: 0px 0px 16px 17px rgb(207, 26, 33);
+  box-shadow: 0px 0px 16px 17px var(--dark-side-primary);
 }
 
 .light-card {
   background-color: grey;
-  box-shadow: 0px 0px 16px 17px rgb(1, 159, 224);
+  box-shadow: 0px 0px 16px 17px var(--light-side-primary);
 }
 
 img {
