@@ -4,8 +4,10 @@
   --dark-side-primary: rgb(207, 26, 33);
   --dark-side-background: rgb(0, 0, 0);
   --dark-side-font: rgb(255, 255, 255);
+  --dark-side-lightsaber: rgb(131, 1, 0);
   --light-side-primary: rgb(1, 159, 224);
   --light-side-background: rgb(128, 128, 128);
+  --light-side-lightsaber: rgb(36, 126, 39);
   --light-side-font: rgb(0, 0, 0);
   --star-wars-title: rgb(250, 220, 8);
   --card-border: rgb(255, 255, 255);
@@ -60,8 +62,9 @@ body {
 .dark-card--p {
   border-image: linear-gradient(
       to bottom,
-      var(--dark-side-font),
-      var(--dark-side-primary)
+      var(--dark-side-lightsaber),
+      90%,
+      var(--dark-side-font)
     )
     0 1;
 
@@ -74,8 +77,9 @@ body {
 .light-card--p {
   border-image: linear-gradient(
       to bottom,
-      var(--card-border),
-      var(--light-side-primary)
+      var(--light-side-lightsaber),
+      90%,
+      var(--card-border)
     )
     0 1;
   border-style: solid;
