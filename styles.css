@@ -4,13 +4,9 @@ body {
   background-image: url("./images/star-field.jpg");
 }
 
-card-container {
-  margin: 4em 4em;
-}
-
 .container {
   display: flex;
-  margin: 10px;
+  margin: 2em 4em;
   padding: 20px;
   font-size: 30px;
   justify-content: space-around;
@@ -31,7 +27,6 @@ card-container {
   border-radius: 10px;
   min-width: 18em;
   width: 100%;
-  margin: 2em 2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +50,6 @@ img {
 
 @media screen and (min-width: 1182px) {
   .container {
-    display: flex;
     flex-direction: row;
   }
 }
