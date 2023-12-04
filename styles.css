@@ -55,6 +55,18 @@ body {
   box-shadow: 0px 0px 16px 17px var(--light-side-primary);
 }
 
+.dark-card--p {
+  border: var(--dark-side-primary);
+  border-style: solid;
+  border-top-width: 3px;
+}
+
+.light-card--p {
+  border: var(--light-side-primary);
+  border-style: solid;
+  border-top-width: 3px;
+}
+
 img {
   max-width: 14em;
 }
