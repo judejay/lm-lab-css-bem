@@ -2,8 +2,12 @@
 
 :root {
   --dark-side-primary: rgb(207, 26, 33);
+  --dark-side-background: rgb(0, 0, 0);
+  --dark-side-font: rgb(255, 255, 255);
   --light-side-primary: rgb(1, 159, 224);
+  --light-side-background: rgb(128, 128, 128);
   --star-wars-title: rgb(250, 220, 8);
+  --card-border: rgb(255, 255, 255);
 }
 
 body {
@@ -28,26 +32,26 @@ body {
 }
 
 .card {
-  border: 10px solid #fff;
+  border: 10px solid var(--card-border);
   border-radius: 10px;
   min-width: 18em;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
 }
 .card-title {
   text-align: center;
   text-transform: uppercase;
 }
 .dark-card {
-  color: white;
+  color: var(--dark-side-font);
+  background-color: var(--dark-side-background);
   box-shadow: 0px 0px 16px 17px var(--dark-side-primary);
 }
 
 .light-card {
-  background-color: grey;
+  background-color: var(--light-side-background);
   box-shadow: 0px 0px 16px 17px var(--light-side-primary);
 }
 
